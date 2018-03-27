@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='tupleo',
+setup(name='allconvert',
       version='1.0.0',
       description='API to provide functionality of conversion between data types',
       url='https://github.com/chetanpalliwal13/allconvert',
