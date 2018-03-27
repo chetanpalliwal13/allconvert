@@ -1,2 +1,1 @@
-# API To support all list operation to tuple which not available normally in python.
-# e.g -> insert, append, copy, clear, pop, remove, reverse, sort
+# API to provide functionality of conversion between data types
