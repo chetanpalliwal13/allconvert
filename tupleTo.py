@@ -1,8 +1,9 @@
 """
-Files to do conversion from tupleTo - list, dictionary, array, namedTuple, bytes, int, string, unicode
+Files to do conversion from tupleTo - list, dictionary, numpyArray, namedTuple, bytes, int, string, unicode
 And also provide interface to do operation on tuple which not permitted in python to do.
 e.g tuple modification, insert element in tuple, remove elemnt from tuple.
 """
+import numpy
 
 def insert(index, value, tupleo):
     """
@@ -151,3 +152,12 @@ def tupleToList(tupleTo):
         else:
             pass
     return tupleTo
+
+def tupleToArray(tupleTo, fullDepthLevel='No'):
+    """
+    tupleToArray(...) method of allconver instance
+    T.tupleToArray(tupleTo, fullDepthLevel='No') -> numpy Array -- convert tuple to numpy Arrary to Full Depth Level.
+    """
+    if type(tupleTo) != tuple:
+        raise TypeError("{} is not tuple".format(tupleTo))
+    return numpy.array(tupleTo) if fullDepthLevel=='No' else return numpy.array(tupleToList(tupleTo))
