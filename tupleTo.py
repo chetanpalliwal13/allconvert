@@ -7,7 +7,7 @@ import numpy
 
 def insert(index, value, tupleo):
     """
-    insert(...) method of tupleo.tuple instance
+    insert(...) method of tupleTo instance
     T.insert(index, object, tupleo)  -- insert object before index in tuple, tupleo
     """
     if type(tupleo) != tuple:
@@ -18,7 +18,7 @@ def insert(index, value, tupleo):
 	
 def append(value, tupleo):
     """
-    append(...) method of tupleo.tuple instance
+    append(...) method of tupleTo instance
     T.append(object, tupleo) -> None -- append object to end of tuple, tupleo
     """
     if type(tupleo) != tuple:
@@ -29,7 +29,7 @@ def append(value, tupleo):
 
 def clear(tupleo):
     """
-    clear(...) method of tupleo.tuple instance
+    clear(...) method of tupleoTo instance
     T.clear(tupleo) -> None -- Remove all elements from tuple, tupleo
     """
     if type(tupleo) != tuple:
@@ -40,7 +40,7 @@ def clear(tupleo):
 	
 def copy(tupleo):
     """
-    clear(...) method of tupleo.tuple instance
+    clear(...) method of tupleoTo instance
     T.copy(tupleo) -> Tuple -- a shallow copy of tuple, tupleo
     """
     if type(tupleo) != tuple:
@@ -50,7 +50,7 @@ def copy(tupleo):
 	
 def extend(value, tupleo):
     """
-    extend(...) method of tupleo.tuple instance
+    extend(...) method of tupleoTo instance
     T.extend(iterable, tupleo) -> None -- extend tuple, tupleo by appending elements from the iterable
     """
     if type(tupleo) != tuple:
@@ -63,7 +63,7 @@ def extend(value, tupleo):
 	
 def pop(tupleo, *index):
     """
-    pop(...) method of tupleo.tuple instance
+    pop(...) method of tupleoTo instance
     T.pop(tupleo, index) -> item -- remove and return item at index (default last) from tuple, tupleo.
     Raises IndexError if list is empty or index is out of range
     """
@@ -78,7 +78,7 @@ def pop(tupleo, *index):
 	
 def remove(value, tupleo):
     """
-    remove(...) method of tupleo.tuple instance
+    remove(...) method of tupleoTo instance
     T.remove(value, tupleo) -> None -- remove first occurrence of value from tuple, tupleo.
     Raises ValueError if the value is not present
     """
@@ -90,7 +90,7 @@ def remove(value, tupleo):
 	
 def reverse(tupleo):
     """
-    reverse(...) method of tupleo.tuple instance
+    reverse(...) method of tupleTo instance
     T.reverse(tupleo) -- reverse *IN PLACE tuple, tupleo*
     """
     if type(tupleo) != tuple:
@@ -99,7 +99,7 @@ def reverse(tupleo):
 	
 def sort(tupleo, key=None, reverse=False):
     """
-    sort(...) method of tupleo.tuple instance
+    sort(...) method of tupleTo instance
     T.sort(tupleo, key=None, reverse=False) -> None -- stable sort *IN PLACE tuple, tupleo*
     """
     if type(tupleo) != tuple:
@@ -116,7 +116,7 @@ def sort(tupleo, key=None, reverse=False):
 
 def tupleToDict(tupleTo, index=0):
     """
-    tupleToDict(...) method of tupleo.tuple instance
+    tupleToDict(...) method of tupleTo instance
     T.tupleToDict(tupleTo, object) -> None -- convert tuple to Dictionary.
     if index given then index is key and remain elements are value in list format (default index 0)
     """
@@ -138,7 +138,7 @@ def tupleToDict(tupleTo, index=0):
 	
 def tupleToList(tupleTo):
     """
-    tupleToList(...) method of tupleo.tuple instance
+    tupleToList(...) method of tupleTo instance
     T.tupleToList(tupleTo) -> None -- convert tuple to List to Full Depth Level.
     """
     if type(tupleTo)==tuple:
@@ -155,7 +155,7 @@ def tupleToList(tupleTo):
 
 def tupleToArray(tupleTo, fullDepthLevel='No'):
     """
-    tupleToArray(...) method of allconver instance
+    tupleToArray(...) method of tupleTo instance
     T.tupleToArray(tupleTo, fullDepthLevel='No') -> numpy Array -- convert tuple to numpy Arrary to Full Depth Level.
     """
     if type(tupleTo) != tuple:
